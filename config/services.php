@@ -9,6 +9,13 @@
 
     $results = array();
 
+    session_start();
+    
+    if(!isset($_SESSION['username'])){
+        echo "Access denied!";
+        exit();
+    }
+
 
     if($_POST['action'] == "create_user"){
         $user = $_POST['user'];

@@ -114,3 +114,18 @@
 </body>
 
 </html>
+
+<?
+
+    $a = "admin";
+
+
+    if($a == "admin"){
+        echo "1";
+    }else{
+        echo "0";
+    }
+
+    ($a == "admin") ? echo "1" : echo "0";
+
+?>
